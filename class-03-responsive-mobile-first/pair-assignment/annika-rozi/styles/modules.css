@@ -66,6 +66,11 @@
     display: inline;
   }
 
+  .main-nav {
+    padding: 5%;
+    float: right;
+  }
+
   .main-nav ul {
     display: inline;
   }
