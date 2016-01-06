@@ -21,6 +21,10 @@
   margin: .2em 5%;
 }
 
+#ham {
+  float:right;
+}
+
 /* DONE: Add styles so the filters lay out better on desktop. */
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
