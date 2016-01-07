@@ -11,22 +11,26 @@
     <link rel="stylesheet" href="styles/modules.css">
 
     <!--
-      TODO: Add a script tag to hold the Handlebars template.
+      DID: Add a script tag to hold the Handlebars template.
         - Be sure to give it a meaningful id attribute.
         - Move your old template structure to here.
         - Insert placeholder keys.
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
     <script id='blog-post' type='text/x-handlebars-template'>
+
          <header>
+           <div style="display:block">
            <h1>{{title}}</h1>
            <div class="byline">
-             By <address><a href="">{{author}}</a></address>
-             published <time pubdate datetime="2000-01-01">Publish Time</time>
+             By <address><a href="{{url}}">{{author}}</a></address>
+             published <time pubdate datetime="2000-01-01">{{daysAgo}} days ago</time>
            </div>
          </header>
-         <section class="article-body"></section>
+         <section class="article-body">{{{body}}}</section>
          <a href="#" class="read-on">Read on &rarr;</a>
+       </div>
+       <hr>
     </script>
 
   </head>
